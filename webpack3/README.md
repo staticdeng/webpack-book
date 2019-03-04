@@ -29,3 +29,5 @@
 * 2: [webpack编译es6](./2.webpack编译es6/)
 
 * 3: [webpack编译typescript](./3.webpack编译typescript/)
+
+* 4: [webpack之CommonsChunkPlugin提取公共代码](./4.webpack提取公共代码/)
