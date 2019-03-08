@@ -72,10 +72,10 @@ webpack.config.CommonsChunkPlugin.js：
 module.exports = {
     entry: {
         ...,
-        'vendor': ['lodash'] // 将业务代码和第三方引用包如lodash、react等，用数组形式指定多个。
+        'vendor': ['lodash'] // 将业务代码和第三方引用包如lodash、react等区分开，用数组形式指定多个
     },
     plugins: [
-        // pageA和pageB的公共代码
+        // pageA和pageB的公共代码提取用CommonsChunkPlugin，只适用于多entry的情况，如果entry为单个，这个就不起作用
         new webpack.optimize.CommonsChunkPlugin({
             name: 'common',
             minChunks: 2,

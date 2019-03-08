@@ -31,3 +31,5 @@
 * 3: [webpack编译typescript](./3.webpack编译typescript/)
 
 * 4: [webpack之CommonsChunkPlugin提取公共代码](./4.webpack提取公共代码/)
+
+* 5: [webpack代码分割](./5.webpack代码分割/)
