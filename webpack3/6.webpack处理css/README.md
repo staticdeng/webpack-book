@@ -2,9 +2,9 @@
 
 webpack中处理css的loader有style-loader、css-loader
 
-## css-loader style-loader
+## css-loader style-loader
 
-css-loader可以让代码中能用import的方式导入css，style-loader处理css放入到页面中的操作。
+css-loader可以让代码中能用import的方式导入css，style-loader处理css放到页面中的操作。
 
 <font color=#6f4e37>安装：</font>
 
@@ -30,7 +30,7 @@ webpack打包时，写在后面的loader先执行，先执行css-loader处理在
 import './css/base.css';
 ```
 
-style-loader、css-loader还有很多配置项，不同配置效果不一样，[具体可以看看这个](https://blog.csdn.net/TyrionJ/article/details/79288287)
+style-loader、css-loader还有很多配置项，不同配置效果不一样吗，[具体可以看看这个](https://blog.csdn.net/TyrionJ/article/details/79288287)
 
 ## 配置less/sass
 
@@ -72,22 +72,22 @@ module.exports = {
     }
 }
 ```
-在src/app.js里面引入css, less文件测试
+在src/app.js里面引入css, less文件测试
 
 ```js
 import './css/base.css';
 import './css/common.less'
 ```
-运行webpack --config webpack.config.css.js，打包后只生成一个js打包文件：
+运行webpack --config webpack.config.css.js，打包后只生成一个js的打包文件：
 
 ```
 app.bundle.js
 ```
-因为base.css和common.less里面样式都在这个打包文件js里，app.bundle.js在页面中加载后，由于style-loader的作用，这些样式都会自动加载到页面中。
+因为base.css和common.less里面样式都在这个打包文件js里，app.bundle.js在页面中加载后，由于style-loader的作用，这些样式都会自动加载到页面中。
 
 ## 提取css
 
-通过style-loader的方式只能将js打包文件中的css加载到页面中，实际上打包文件并没有做到js和css代码的分离，需要提取css的话，wenpack3中需要extract-text-webpack-plugin插件。
+通过style-loader的方式只能将js打包文件中的css加载到页面中，实际上打包文件并没有做到js和css代码的分离，需要提取css的话，wenpack3中需要extract-text-webpack-plugin插件。
 
 <font color=#6f4e37>安装：</font>
 
