@@ -30,8 +30,10 @@
 
 * 3: [webpack编译typescript](./3.webpack编译typescript/)
 
-* 4: [webpack之CommonsChunkPlugin提取公共代码](./4.webpack提取公共代码/)
+* 4: [webpackCommonsChunkPlugin提取公共代码](./4.webpack提取公共代码/)
 
-* 5: [webpack代码分割](./5.webpack代码分割/)
+* 5: [webpack优化之代码分割](./5.webpack代码分割/)
 
 * 6: [webpack处理css](./6.webpack处理css/)
+
+* 7: [webpack优化之tree-shaking](./7.webpack优化之tree-shaking/)

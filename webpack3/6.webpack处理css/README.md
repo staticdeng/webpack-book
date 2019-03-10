@@ -30,7 +30,7 @@ webpack打包时，写在后面的loader先执行，先执行css-loader处理在
 import './css/base.css';
 ```
 
-style-loader、css-loader还有很多配置项，不同配置效果不一样吗，[具体可以看看这个](https://blog.csdn.net/TyrionJ/article/details/79288287)
+style-loader、css-loader还有很多配置项，不同配置效果不一样，[具体可以看看这个](https://blog.csdn.net/TyrionJ/article/details/79288287)
 
 ## 配置less/sass
 
@@ -87,7 +87,7 @@ app.bundle.js
 
 ## 提取css
 
-通过style-loader的方式只能将js打包文件中的css加载到页面中，实际上打包文件并没有做到js和css代码的分离，需要提取css的话，wenpack3中需要extract-text-webpack-plugin插件。
+通过style-loader的方式只能将js打包文件中的css加载到页面中，实际上打包文件并没有做到js和css代码的分离，需要提取css的话，wenpack3中需要extract-text-webpack-plugin插件。
 
 <font color=#6f4e37>安装：</font>
 
