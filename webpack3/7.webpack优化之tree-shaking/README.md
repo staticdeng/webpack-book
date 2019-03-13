@@ -79,6 +79,50 @@ export function lodashTest(value) {
 
 关于掘金上很多文章所说[webpack-deep-scope-analysis-plugin](https://github.com/vincentdchan/webpack-deep-scope-analysis-plugin)可以对lodash-es做到tree-shaking，但是不支持webpack3；在webpack4中，webpack自己就可以对lodash-es进行tree-shaking，这样也就不需要webpack-deep-scope-analysis-plugin插件啦！所以网上很多文章是错误的，也或许是我用的webpack4版本更高。(亲测！)
 
+如果用到babel编译，注意webpack 2.0 开始原生支持 ES Module，也就是说不需要 babel 把 ES Module 转换成曾经的 commonjs 模块了，想用上 Tree Shaking，请务必关闭 babel 默认的模块转义：
+
+```js
+{
+    'presets': [
+        [
+            'env', { 'modules': false }
+        ]
+    ]
+}
+```
+
+还有很多第三方组件库使用的时候，可以缩小引用范围tree-shaking，具体可以看百度外卖大前端技术团队的[Tree-Shaking性能优化实践-实践篇](https://juejin.im/post/5a4dca1d518825128654fa78)。
+
+
+## CSS Tree Shaking
+
+同理，js可以tree-shaking，css也可以进行tree-shaking，可以借助purifycss-webpack插件，可以达到项目中的某些css样式没用到就不会打包的效果，优化css体积。
+
+安装：
+
+```bash
+npm i -D purify-css purifycss-webpack
+# 安装处理多个路径的glob-all
+npm i -D glob-all
+```
+
+配置：
+
+```js
+const globAll = require('glob-all');
+const PurifyCSS = require('purifycss-webpack');
+...
+plugins: [
+    // css tree-shaking去除无用的css
+    new PurifyCSS({
+        paths: globAll.sync([
+            path.resolve(__dirname, './*.html'),
+            path.resolve(__dirname, './src/*.js'),
+        ])
+    })
+]
+```
+
 <font color=#FFA500>参考文档（表示感谢）：</font>
 
 [Tree-Shaking性能优化实践-原理篇-
