@@ -37,3 +37,5 @@
 * 6: [webpack处理css](./6.webpack处理css/)
 
 * 7: [webpack优化之tree-shaking](./7.webpack优化之tree-shaking/)
+
+* 8: [webpack优化之tree-shaking](./8.webpack文件处理/)

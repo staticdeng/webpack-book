@@ -1,0 +1,15 @@
+.box{
+
+}
+.box .icon01{
+    width: 500px;
+    height: 135px;
+    margin-bottom: 20px;
+    background: url('../imgs/import.png') no-repeat;
+}
+.box .icon02{
+    width: 500px;
+    height: 135px;
+    margin-bottom: 20px;
+    background: url('../imgs/require.ensure.png') no-repeat;
+}
