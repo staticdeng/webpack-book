@@ -22,7 +22,7 @@
 > Scope Hoisting(作用域提升)
 > Magic Components(配合动态import使用)
 
-## 文档列表
+## 基础配置
 
 * 1: [webpack基本配置](./1.webpack基本配置/)
 
@@ -38,4 +38,6 @@
 
 * 7: [webpack优化之tree-shaking](./7.webpack优化之tree-shaking/)
 
-* 8: [webpack优化之tree-shaking](./8.webpack文件处理/)
+* 8: [webpack文件处理](./8.webpack文件处理/)
+
+* 9: [html-in-webpack](./9.html-in-webpack/)
