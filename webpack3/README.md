@@ -30,7 +30,7 @@
 
 * 3: [webpack编译typescript](./3.webpack编译typescript/)
 
-* 4: [webpackCommonsChunkPlugin提取公共代码](./4.webpack提取公共代码/)
+* 4: [webpack优化之提取公共代码](./4.webpack提取公共代码/)
 
 * 5: [webpack优化之代码分割](./5.webpack代码分割/)
 
@@ -45,3 +45,5 @@
 * 10: [webpack-dev-server](./10.webpack-dev-server/)
 
 * 11: [使用middleware搭建server](./11.使用middleware搭建server/)
+
+* 12: [webpack优化之长缓存优化](./12.webpack优化之长缓存优化/)
