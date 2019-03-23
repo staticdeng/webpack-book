@@ -5,23 +5,6 @@
 
 这个文档中用到的webpack3版本为webpack3的最后一个版本3.12.0。
 
-## webpack各个版本特点
-
-* webpack1
-
-> 编译打包、模块热更新、代码分割、文件处理
-
-* webpack2
-
-> Tree Shaking
-> ES module 默认支持了es的语法
-> 动态import
-
-* webpack3
-
-> Scope Hoisting(作用域提升)
-> Magic Components(配合动态import使用)
-
 ## 基础配置
 
 * 1: [webpack基本配置](./1.webpack基本配置/)
@@ -46,4 +29,4 @@
 
 * 11: [使用middleware搭建server](./11.使用middleware搭建server/)
 
-* 12: [webpack优化之长缓存优化](./12.webpack优化之长缓存优化/)
+* 12: [webpack优化之长缓存优化](./12.长缓存优化/)
