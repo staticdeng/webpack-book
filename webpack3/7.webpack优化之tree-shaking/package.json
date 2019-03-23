@@ -1,0 +1,21 @@
+{
+  "name": "webpack3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.tree-shaking.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "glob-all": "^3.1.0",
+    "purify-css": "^1.2.5",
+    "purifycss-webpack": "^0.7.0",
+    "webpack": "^3.12.0"
+  },
+  "dependencies": {
+    "lodash-es": "^4.17.10"
+  }
+}
